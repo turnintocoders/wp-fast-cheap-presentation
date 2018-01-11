@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Creare un sito di successo a zero €</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/turnintocoders.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Creare un sito di successo a zero €</h1>
+					<p>Come ho fatto a servire 500.000 pagine in un weekend, con WordPress.</p>
+					<br>
+					<p>by Matteo Giaccone</p>
+				</section>
+
+				<section>
+					<h2>Cosa?</h2>
+
+					<p>
+						Vi racconto la storia di come ho realizzato il sito di
+						<a href="http://openhousetorino.it/">Open House Torino</a> per volontariato.
+					</p>
+
+					<p>
+						Il budget che avevo a disposizione era di zero €.
+					</p>
+
+					<p>
+						Magari torna utile anche a voi sapere cosa ho fatto.
+					</p>
+				</section>
+
+				<section>
+					<h2>Cosa? /2</h2>
+
+					<img src="img/oht.jpg" />
+				</section>
+
+				<section>
+					<h2>Cosa? /3</h2>
+
+					<img src="img/traffico.png" />
+				</section>
+
+				<section>
+					<h2>Chi?</h2>
+
+					<h1 class="title-background">Turn<br>into<br>Coders</h1>
+
+					<p>Web developer bootcamp</p>
+				</section>
+
+				<section>
+					<h2>Voi?</h2>
+
+					<p>Un paio di domande per conoscerci meglio:</p>
+
+					<p class="fragment fade-up">Non siate timidi :)</p>
+
+					<ul>
+						<li class="fragment">Hai scritto codice PHP?</li>
+						<li class="fragment">Hai sritto un tema WordPress<br>(es. functions.php, pezzi del tema)?</li>
+					</ul>
+				</section>
+
+				<section data-background-image="img/additive_color.svg" data-background-size="contain">
+				</section>
+
+				<section>
+					<h2>Open House Torino</h2>
+
+					<p>Website tour!</p>
+				</section>
+
+				<section>
+					<h2>Tutto arcobaleni?</h2>
+
+					<p>Fin qui tutto bene, ma poi l'evento si avvicina...</p>
+
+					<div class="fragment">
+						<img src="img/loading_time.png" />
+						<p>Il sito ci mette >30s a caricare...</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>CDN alla riscossa!</h2>
+
+					<p>CDN = Content Delivery Network</p>
+
+					<p>
+						Una rete di server distribuita geograficamente per mantenere una copia
+						dei file e aiutare il server principale a servire più velocemente gli
+						utenti.
+					</p>
+				</section>
+
+				<section>
+					<h2>CDN perché?</h2>
+
+					<p>
+						Di solito si usa per ridurre la banda usata dal server principale per distribuire file
+						pesanti e statici, come immagini, file JS e file CSS.
+					</p>
+				</section>
+
+				<section>
+					<h2>Di solito... ma non sempre!</h2>
+
+					<p>Nel nostro caso abbiamo piegato un po' le regole, perché la base non è stata sufficiente.</p>
+
+					<div class="text-center">
+						<img src="img/cache-all-the-things.png" />
+					</div>
+				</section>
+
+				<section>
+					<h2>Thanks Cloudflare</h2>
+
+					<p>Come CDN ho usato e raccomand Cloudflare</p>
+
+					<p>Due cose fondamentali:</p>
+
+					<p>
+						DNS<br>
+						<img src="img/cf_dns.png" />
+					</p>
+
+					<p>
+						Page rules<br>
+						<img src="img/cf_page_rules.png" />
+					</p>
+				</section>
+
+				<section>
+					<h2>Tornando alle premesse</h2>
+
+					<p>Attenzione, questo approccio ha funzionato perché:</p>
+
+					<ul>
+						<li>il sito non è stato cambiato per tutta la durata del weekend (o quasi)</li>
+						<li>tutte le pagine erano statiche: non cambiavano in base alle interazioni degli utenti</li>
+					</ul>
+
+					<p>Stiamo parlando di un sito statico che ha WordPress come CMS.</p>
+				</section>
+
+				<section>
+					<h2>Domande!</h2>
+				</section>
+
+				<section>
+					<h2>Link</h2>
+
+					<ul>
+						<li><a href="http://openhousetorino.it/">Open House Torino</a></li>
+						<li><a href="https://www.cloudflare.com/">Cloudflare</a></li>
+						<li><a href="https://github.com/turnintocoders/wp-fast-cheap-workshop">Queste slide</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Grazie!</p>
+
+					<p>
+						Twitter: <a href="https://twitter.com/Mat_Jack1/">@mat_jack1</a><br>
+						Sito: <a href="http://www.turnintocoders.it">www.turnintocoders.it</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
